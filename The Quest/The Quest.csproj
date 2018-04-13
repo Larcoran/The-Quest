@@ -53,6 +53,9 @@
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="Form1.resx">
+      <DependentUpon>Form1.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
       <LastGenOutput>Resources.Designer.cs</LastGenOutput>
@@ -61,6 +64,7 @@
     <Compile Include="Properties\Resources.Designer.cs">
       <AutoGen>True</AutoGen>
       <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
     </Compile>
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
@@ -74,6 +78,38 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Images\bat.png" />
+    <Content Include="Images\battleaxe.png" />
+    <Content Include="Images\bomb.png" />
+    <Content Include="Images\bow.png" />
+    <Content Include="Images\dungeon600x400.png" />
+    <Content Include="Images\ghost.png" />
+    <Content Include="Images\ghoul.png" />
+    <Content Include="Images\mace.png" />
+    <Content Include="Images\player.png" />
+    <Content Include="Images\potion_blue.png" />
+    <Content Include="Images\potion_red.png" />
+    <Content Include="Images\quiver.png" />
+    <Content Include="Images\shield.png" />
+    <Content Include="Images\sword.png" />
+    <Content Include="Images\wizard.png" />
+    <None Include="Resources\wizard.png" />
+    <None Include="Resources\sword.png" />
+    <None Include="Resources\shield.png" />
+    <None Include="Resources\quiver.png" />
+    <None Include="Resources\potion_red.png" />
+    <None Include="Resources\potion_blue.png" />
+    <None Include="Resources\player.png" />
+    <None Include="Resources\mace.png" />
+    <None Include="Resources\ghoul.png" />
+    <None Include="Resources\ghost.png" />
+    <None Include="Resources\dungeon600x400.png" />
+    <None Include="Resources\bow.png" />
+    <None Include="Resources\bomb.png" />
+    <None Include="Resources\battleaxe.png" />
+    <None Include="Resources\bat.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
