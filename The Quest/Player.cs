@@ -56,8 +56,13 @@ namespace The_Quest
             base.location = Move(direction, game.Boundaries);
             if(!game.WeaponInRoom.PickedUp)
             {
-               //TODO: see if the weapon is nearby, and possibly pick it up
+               //TODO: see if the weapon is nearby, and possibly pick it up.
             }
+        }
+
+        public void Attack(Direction direction,Random random)
+        {
+            //TODO: Add code for this method.
         }
 
     }
