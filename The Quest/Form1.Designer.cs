@@ -29,15 +29,15 @@
         private void InitializeComponent()
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Form1));
-            this.pictureBox1 = new System.Windows.Forms.PictureBox();
-            this.pictureBox2 = new System.Windows.Forms.PictureBox();
-            this.pictureBox3 = new System.Windows.Forms.PictureBox();
-            this.pictureBox4 = new System.Windows.Forms.PictureBox();
-            this.pictureBox5 = new System.Windows.Forms.PictureBox();
-            this.pictureBox6 = new System.Windows.Forms.PictureBox();
-            this.pictureBox7 = new System.Windows.Forms.PictureBox();
-            this.pictureBox8 = new System.Windows.Forms.PictureBox();
-            this.pictureBox9 = new System.Windows.Forms.PictureBox();
+            this.Player = new System.Windows.Forms.PictureBox();
+            this.sword = new System.Windows.Forms.PictureBox();
+            this.ghoul = new System.Windows.Forms.PictureBox();
+            this.bat = new System.Windows.Forms.PictureBox();
+            this.ghost = new System.Windows.Forms.PictureBox();
+            this.bow = new System.Windows.Forms.PictureBox();
+            this.bluePotion = new System.Windows.Forms.PictureBox();
+            this.redPotion = new System.Windows.Forms.PictureBox();
+            this.mace = new System.Windows.Forms.PictureBox();
             this.pictureBox10 = new System.Windows.Forms.PictureBox();
             this.pictureBox11 = new System.Windows.Forms.PictureBox();
             this.pictureBox12 = new System.Windows.Forms.PictureBox();
@@ -48,10 +48,10 @@
             this.label1 = new System.Windows.Forms.Label();
             this.label5 = new System.Windows.Forms.Label();
             this.label7 = new System.Windows.Forms.Label();
-            this.label8 = new System.Windows.Forms.Label();
-            this.label6 = new System.Windows.Forms.Label();
-            this.label4 = new System.Windows.Forms.Label();
-            this.label2 = new System.Windows.Forms.Label();
+            this.ghoulHitPoints = new System.Windows.Forms.Label();
+            this.ghostHitPoints = new System.Windows.Forms.Label();
+            this.batHitPoints = new System.Windows.Forms.Label();
+            this.playerHitPoints = new System.Windows.Forms.Label();
             this.groupBox1 = new System.Windows.Forms.GroupBox();
             this.button4 = new System.Windows.Forms.Button();
             this.button3 = new System.Windows.Forms.Button();
@@ -62,15 +62,15 @@
             this.button6 = new System.Windows.Forms.Button();
             this.button7 = new System.Windows.Forms.Button();
             this.button8 = new System.Windows.Forms.Button();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox5)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox6)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox7)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox8)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox9)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.Player)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.sword)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.ghoul)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.bat)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.ghost)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.bow)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.bluePotion)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.redPotion)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.mace)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox10)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox11)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox12)).BeginInit();
@@ -81,113 +81,113 @@
             this.groupBox2.SuspendLayout();
             this.SuspendLayout();
             // 
-            // pictureBox1
+            // Player
             // 
-            this.pictureBox1.BackColor = System.Drawing.Color.Transparent;
-            this.pictureBox1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
-            this.pictureBox1.Image = global::The_Quest.Properties.Resources.player;
-            this.pictureBox1.Location = new System.Drawing.Point(103, 85);
-            this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(45, 45);
-            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.pictureBox1.TabIndex = 0;
-            this.pictureBox1.TabStop = false;
+            this.Player.BackColor = System.Drawing.Color.Transparent;
+            this.Player.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
+            this.Player.Image = global::The_Quest.Properties.Resources.player;
+            this.Player.Location = new System.Drawing.Point(103, 85);
+            this.Player.Name = "Player";
+            this.Player.Size = new System.Drawing.Size(45, 45);
+            this.Player.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.Player.TabIndex = 0;
+            this.Player.TabStop = false;
             // 
-            // pictureBox2
+            // sword
             // 
-            this.pictureBox2.BackColor = System.Drawing.Color.Transparent;
-            this.pictureBox2.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
-            this.pictureBox2.Image = global::The_Quest.Properties.Resources.sword;
-            this.pictureBox2.Location = new System.Drawing.Point(154, 85);
-            this.pictureBox2.Name = "pictureBox2";
-            this.pictureBox2.Size = new System.Drawing.Size(45, 45);
-            this.pictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.pictureBox2.TabIndex = 1;
-            this.pictureBox2.TabStop = false;
+            this.sword.BackColor = System.Drawing.Color.Transparent;
+            this.sword.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
+            this.sword.Image = global::The_Quest.Properties.Resources.sword;
+            this.sword.Location = new System.Drawing.Point(154, 85);
+            this.sword.Name = "sword";
+            this.sword.Size = new System.Drawing.Size(45, 45);
+            this.sword.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.sword.TabIndex = 1;
+            this.sword.TabStop = false;
             // 
-            // pictureBox3
+            // ghoul
             // 
-            this.pictureBox3.BackColor = System.Drawing.Color.Transparent;
-            this.pictureBox3.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
-            this.pictureBox3.Image = global::The_Quest.Properties.Resources.ghoul;
-            this.pictureBox3.Location = new System.Drawing.Point(249, 85);
-            this.pictureBox3.Name = "pictureBox3";
-            this.pictureBox3.Size = new System.Drawing.Size(45, 45);
-            this.pictureBox3.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.pictureBox3.TabIndex = 2;
-            this.pictureBox3.TabStop = false;
+            this.ghoul.BackColor = System.Drawing.Color.Transparent;
+            this.ghoul.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
+            this.ghoul.Image = global::The_Quest.Properties.Resources.ghoul;
+            this.ghoul.Location = new System.Drawing.Point(256, 85);
+            this.ghoul.Name = "ghoul";
+            this.ghoul.Size = new System.Drawing.Size(45, 45);
+            this.ghoul.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.ghoul.TabIndex = 2;
+            this.ghoul.TabStop = false;
             // 
-            // pictureBox4
+            // bat
             // 
-            this.pictureBox4.BackColor = System.Drawing.Color.Transparent;
-            this.pictureBox4.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
-            this.pictureBox4.Image = global::The_Quest.Properties.Resources.bat;
-            this.pictureBox4.Location = new System.Drawing.Point(198, 85);
-            this.pictureBox4.Name = "pictureBox4";
-            this.pictureBox4.Size = new System.Drawing.Size(45, 45);
-            this.pictureBox4.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.pictureBox4.TabIndex = 3;
-            this.pictureBox4.TabStop = false;
+            this.bat.BackColor = System.Drawing.Color.Transparent;
+            this.bat.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
+            this.bat.Image = global::The_Quest.Properties.Resources.bat;
+            this.bat.Location = new System.Drawing.Point(205, 85);
+            this.bat.Name = "bat";
+            this.bat.Size = new System.Drawing.Size(45, 45);
+            this.bat.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.bat.TabIndex = 3;
+            this.bat.TabStop = false;
             // 
-            // pictureBox5
+            // ghost
             // 
-            this.pictureBox5.BackColor = System.Drawing.Color.Transparent;
-            this.pictureBox5.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
-            this.pictureBox5.Image = global::The_Quest.Properties.Resources.ghost;
-            this.pictureBox5.Location = new System.Drawing.Point(300, 85);
-            this.pictureBox5.Name = "pictureBox5";
-            this.pictureBox5.Size = new System.Drawing.Size(45, 45);
-            this.pictureBox5.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.pictureBox5.TabIndex = 4;
-            this.pictureBox5.TabStop = false;
+            this.ghost.BackColor = System.Drawing.Color.Transparent;
+            this.ghost.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
+            this.ghost.Image = global::The_Quest.Properties.Resources.ghost;
+            this.ghost.Location = new System.Drawing.Point(307, 85);
+            this.ghost.Name = "ghost";
+            this.ghost.Size = new System.Drawing.Size(45, 45);
+            this.ghost.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.ghost.TabIndex = 4;
+            this.ghost.TabStop = false;
             // 
-            // pictureBox6
+            // bow
             // 
-            this.pictureBox6.BackColor = System.Drawing.Color.Transparent;
-            this.pictureBox6.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
-            this.pictureBox6.Image = global::The_Quest.Properties.Resources.bow;
-            this.pictureBox6.Location = new System.Drawing.Point(351, 85);
-            this.pictureBox6.Name = "pictureBox6";
-            this.pictureBox6.Size = new System.Drawing.Size(45, 45);
-            this.pictureBox6.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.pictureBox6.TabIndex = 5;
-            this.pictureBox6.TabStop = false;
+            this.bow.BackColor = System.Drawing.Color.Transparent;
+            this.bow.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
+            this.bow.Image = global::The_Quest.Properties.Resources.bow;
+            this.bow.Location = new System.Drawing.Point(358, 85);
+            this.bow.Name = "bow";
+            this.bow.Size = new System.Drawing.Size(45, 45);
+            this.bow.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.bow.TabIndex = 5;
+            this.bow.TabStop = false;
             // 
-            // pictureBox7
+            // bluePotion
             // 
-            this.pictureBox7.BackColor = System.Drawing.Color.Transparent;
-            this.pictureBox7.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
-            this.pictureBox7.Image = global::The_Quest.Properties.Resources.potion_blue;
-            this.pictureBox7.Location = new System.Drawing.Point(402, 85);
-            this.pictureBox7.Name = "pictureBox7";
-            this.pictureBox7.Size = new System.Drawing.Size(45, 45);
-            this.pictureBox7.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.pictureBox7.TabIndex = 6;
-            this.pictureBox7.TabStop = false;
+            this.bluePotion.BackColor = System.Drawing.Color.Transparent;
+            this.bluePotion.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
+            this.bluePotion.Image = global::The_Quest.Properties.Resources.potion_blue;
+            this.bluePotion.Location = new System.Drawing.Point(409, 85);
+            this.bluePotion.Name = "bluePotion";
+            this.bluePotion.Size = new System.Drawing.Size(45, 45);
+            this.bluePotion.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.bluePotion.TabIndex = 6;
+            this.bluePotion.TabStop = false;
             // 
-            // pictureBox8
+            // redPotion
             // 
-            this.pictureBox8.BackColor = System.Drawing.Color.Transparent;
-            this.pictureBox8.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
-            this.pictureBox8.Image = global::The_Quest.Properties.Resources.potion_red;
-            this.pictureBox8.Location = new System.Drawing.Point(453, 85);
-            this.pictureBox8.Name = "pictureBox8";
-            this.pictureBox8.Size = new System.Drawing.Size(45, 45);
-            this.pictureBox8.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.pictureBox8.TabIndex = 7;
-            this.pictureBox8.TabStop = false;
+            this.redPotion.BackColor = System.Drawing.Color.Transparent;
+            this.redPotion.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
+            this.redPotion.Image = global::The_Quest.Properties.Resources.potion_red;
+            this.redPotion.Location = new System.Drawing.Point(460, 85);
+            this.redPotion.Name = "redPotion";
+            this.redPotion.Size = new System.Drawing.Size(45, 45);
+            this.redPotion.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.redPotion.TabIndex = 7;
+            this.redPotion.TabStop = false;
             // 
-            // pictureBox9
+            // mace
             // 
-            this.pictureBox9.BackColor = System.Drawing.Color.Transparent;
-            this.pictureBox9.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
-            this.pictureBox9.Image = global::The_Quest.Properties.Resources.mace;
-            this.pictureBox9.Location = new System.Drawing.Point(504, 85);
-            this.pictureBox9.Name = "pictureBox9";
-            this.pictureBox9.Size = new System.Drawing.Size(45, 45);
-            this.pictureBox9.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.pictureBox9.TabIndex = 8;
-            this.pictureBox9.TabStop = false;
+            this.mace.BackColor = System.Drawing.Color.Transparent;
+            this.mace.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
+            this.mace.Image = global::The_Quest.Properties.Resources.mace;
+            this.mace.Location = new System.Drawing.Point(511, 85);
+            this.mace.Name = "mace";
+            this.mace.Size = new System.Drawing.Size(45, 45);
+            this.mace.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.mace.TabIndex = 8;
+            this.mace.TabStop = false;
             // 
             // pictureBox10
             // 
@@ -244,11 +244,11 @@
             this.tableLayoutPanel1.Controls.Add(this.label1, 0, 0);
             this.tableLayoutPanel1.Controls.Add(this.label5, 0, 2);
             this.tableLayoutPanel1.Controls.Add(this.label7, 0, 3);
-            this.tableLayoutPanel1.Controls.Add(this.label8, 1, 3);
-            this.tableLayoutPanel1.Controls.Add(this.label6, 1, 2);
-            this.tableLayoutPanel1.Controls.Add(this.label4, 1, 1);
-            this.tableLayoutPanel1.Controls.Add(this.label2, 1, 0);
-            this.tableLayoutPanel1.Location = new System.Drawing.Point(169, 198);
+            this.tableLayoutPanel1.Controls.Add(this.ghoulHitPoints, 1, 3);
+            this.tableLayoutPanel1.Controls.Add(this.ghostHitPoints, 1, 2);
+            this.tableLayoutPanel1.Controls.Add(this.batHitPoints, 1, 1);
+            this.tableLayoutPanel1.Controls.Add(this.playerHitPoints, 1, 0);
+            this.tableLayoutPanel1.Location = new System.Drawing.Point(571, 354);
             this.tableLayoutPanel1.Name = "tableLayoutPanel1";
             this.tableLayoutPanel1.RowCount = 4;
             this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle());
@@ -294,41 +294,41 @@
             this.label7.TabIndex = 6;
             this.label7.Text = "Ghoul";
             // 
-            // label8
+            // ghoulHitPoints
             // 
-            this.label8.AutoSize = true;
-            this.label8.Location = new System.Drawing.Point(45, 39);
-            this.label8.Name = "label8";
-            this.label8.Size = new System.Drawing.Size(48, 13);
-            this.label8.TabIndex = 7;
-            this.label8.Text = "ghoulHP";
+            this.ghoulHitPoints.AutoSize = true;
+            this.ghoulHitPoints.Location = new System.Drawing.Point(45, 39);
+            this.ghoulHitPoints.Name = "ghoulHitPoints";
+            this.ghoulHitPoints.Size = new System.Drawing.Size(48, 13);
+            this.ghoulHitPoints.TabIndex = 7;
+            this.ghoulHitPoints.Text = "ghoulHP";
             // 
-            // label6
+            // ghostHitPoints
             // 
-            this.label6.AutoSize = true;
-            this.label6.Location = new System.Drawing.Point(45, 26);
-            this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(48, 13);
-            this.label6.TabIndex = 5;
-            this.label6.Text = "ghostHP";
+            this.ghostHitPoints.AutoSize = true;
+            this.ghostHitPoints.Location = new System.Drawing.Point(45, 26);
+            this.ghostHitPoints.Name = "ghostHitPoints";
+            this.ghostHitPoints.Size = new System.Drawing.Size(48, 13);
+            this.ghostHitPoints.TabIndex = 5;
+            this.ghostHitPoints.Text = "ghostHP";
             // 
-            // label4
+            // batHitPoints
             // 
-            this.label4.AutoSize = true;
-            this.label4.Location = new System.Drawing.Point(45, 13);
-            this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(37, 13);
-            this.label4.TabIndex = 3;
-            this.label4.Text = "batHP";
+            this.batHitPoints.AutoSize = true;
+            this.batHitPoints.Location = new System.Drawing.Point(45, 13);
+            this.batHitPoints.Name = "batHitPoints";
+            this.batHitPoints.Size = new System.Drawing.Size(37, 13);
+            this.batHitPoints.TabIndex = 3;
+            this.batHitPoints.Text = "batHP";
             // 
-            // label2
+            // playerHitPoints
             // 
-            this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(45, 0);
-            this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(50, 13);
-            this.label2.TabIndex = 1;
-            this.label2.Text = "playerHP";
+            this.playerHitPoints.AutoSize = true;
+            this.playerHitPoints.Location = new System.Drawing.Point(45, 0);
+            this.playerHitPoints.Name = "playerHitPoints";
+            this.playerHitPoints.Size = new System.Drawing.Size(50, 13);
+            this.playerHitPoints.TabIndex = 1;
+            this.playerHitPoints.Text = "playerHP";
             // 
             // groupBox1
             // 
@@ -469,30 +469,30 @@
             this.Controls.Add(this.pictureBox12);
             this.Controls.Add(this.pictureBox11);
             this.Controls.Add(this.pictureBox10);
-            this.Controls.Add(this.pictureBox9);
-            this.Controls.Add(this.pictureBox8);
-            this.Controls.Add(this.pictureBox7);
-            this.Controls.Add(this.pictureBox6);
-            this.Controls.Add(this.pictureBox5);
-            this.Controls.Add(this.pictureBox4);
-            this.Controls.Add(this.pictureBox3);
-            this.Controls.Add(this.pictureBox2);
-            this.Controls.Add(this.pictureBox1);
+            this.Controls.Add(this.mace);
+            this.Controls.Add(this.redPotion);
+            this.Controls.Add(this.bluePotion);
+            this.Controls.Add(this.bow);
+            this.Controls.Add(this.ghost);
+            this.Controls.Add(this.bat);
+            this.Controls.Add(this.ghoul);
+            this.Controls.Add(this.sword);
+            this.Controls.Add(this.Player);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
             this.MaximizeBox = false;
             this.MinimizeBox = false;
             this.Name = "Form1";
             this.SizeGripStyle = System.Windows.Forms.SizeGripStyle.Hide;
             this.Text = "Form1";
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox5)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox6)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox7)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox8)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox9)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.Player)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.sword)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.ghoul)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.bat)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.ghost)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.bow)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.bluePotion)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.redPotion)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.mace)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox10)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox11)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox12)).EndInit();
@@ -510,15 +510,15 @@
 
         #endregion
 
-        private System.Windows.Forms.PictureBox pictureBox1;
-        private System.Windows.Forms.PictureBox pictureBox2;
-        private System.Windows.Forms.PictureBox pictureBox3;
-        private System.Windows.Forms.PictureBox pictureBox4;
-        private System.Windows.Forms.PictureBox pictureBox5;
-        private System.Windows.Forms.PictureBox pictureBox6;
-        private System.Windows.Forms.PictureBox pictureBox7;
-        private System.Windows.Forms.PictureBox pictureBox8;
-        private System.Windows.Forms.PictureBox pictureBox9;
+        private System.Windows.Forms.PictureBox Player;
+        private System.Windows.Forms.PictureBox sword;
+        private System.Windows.Forms.PictureBox ghoul;
+        private System.Windows.Forms.PictureBox bat;
+        private System.Windows.Forms.PictureBox ghost;
+        private System.Windows.Forms.PictureBox bow;
+        private System.Windows.Forms.PictureBox bluePotion;
+        private System.Windows.Forms.PictureBox redPotion;
+        private System.Windows.Forms.PictureBox mace;
         private System.Windows.Forms.PictureBox pictureBox10;
         private System.Windows.Forms.PictureBox pictureBox11;
         private System.Windows.Forms.PictureBox pictureBox12;
@@ -529,10 +529,10 @@
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Label label5;
         private System.Windows.Forms.Label label7;
-        private System.Windows.Forms.Label label8;
-        private System.Windows.Forms.Label label6;
-        private System.Windows.Forms.Label label4;
-        private System.Windows.Forms.Label label2;
+        private System.Windows.Forms.Label ghoulHitPoints;
+        private System.Windows.Forms.Label ghostHitPoints;
+        private System.Windows.Forms.Label batHitPoints;
+        private System.Windows.Forms.Label playerHitPoints;
         private System.Windows.Forms.GroupBox groupBox1;
         private System.Windows.Forms.GroupBox groupBox2;
         private System.Windows.Forms.Button button4;
