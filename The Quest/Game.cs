@@ -80,7 +80,7 @@ namespace The_Quest
             switch (level)
             {
                 case 1:
-                    Enemies = new List<Enemy>() { new Bat(this,GetRandomLocation(random))};
+                    Enemies = new List<Enemy>() { new Bat(this,GetRandomLocation(random)) };
                     WeaponInRoom = new Sword(this, GetRandomLocation(random));
                     break;
                 case 2:
@@ -93,7 +93,7 @@ namespace The_Quest
                     break;
                 case 4:
                     Enemies = new List<Enemy>() { new Bat(this,GetRandomLocation(random)),new Ghost(this,GetRandomLocation(random))};
-                    if (CheckPlayerInventory(Bow))
+                    if (CheckPlayerInventory("Bow"))
                         WeaponInRoom = new BluePotion(this, GetRandomLocation(random));
                     else WeaponInRoom = new Bow(this, GetRandomLocation(random));
                     break;
@@ -107,7 +107,7 @@ namespace The_Quest
                     break;
                 case 7:
                     Enemies = new List<Enemy>() { new Bat(this,GetRandomLocation(random)), new Ghost(this, GetRandomLocation(random)), new Ghoul(this, GetRandomLocation(random)) };
-                    if (CheckPlayerInventory(Mace))
+                    if (CheckPlayerInventory("Mace"))
                         WeaponInRoom = new RedPotion(this, GetRandomLocation(random));
                     else WeaponInRoom = new Mace(this, GetRandomLocation(random));
                     break;

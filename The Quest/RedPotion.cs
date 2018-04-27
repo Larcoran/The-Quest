@@ -16,14 +16,16 @@ namespace The_Quest
 
         public override string Name { get { return "Red Potion"; } }
 
-        public bool Used { get; }
+        public bool Used { get; private set; }
 
         public override void Attack(Direction direction, Random random)
         {
-            //TODO: override attack method.
+            //HACK: override attack method.
             //            The RedPotion class is very similar to BluePotion, except that its
             //Name property returns the string Red Potion, and its Attack()
             //method increases the player’s health by up to 10 hit points.
+            game.IncreasePlayerHealth(10, random);
+            Used = true;
         }
     }
 }

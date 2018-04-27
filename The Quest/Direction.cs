@@ -8,9 +8,9 @@ namespace The_Quest
 {
     enum Direction
     {
-        Up,
-        Down,
-        Left,
-        Right,
+        Up = 2,
+        Down = 4,
+        Left = 1,
+        Right = 3,
     }
 }

@@ -56,7 +56,12 @@ namespace The_Quest
             base.location = Move(direction, game.Boundaries);
             if(!game.WeaponInRoom.PickedUp)
             {
-               //TODO: see if the weapon is nearby, and possibly pick it up.
+                if (game.WeaponInRoom.Nearby(game.WeaponInRoom.Location, game.PlayerLocation, 25))
+                {
+                    inventory.Add(game.WeaponInRoom);
+                    game.WeaponInRoom.PickUpWeapon();
+                }
+               //HACK: see if the weapon is nearby, and possibly pick it up.
             }
         }
 

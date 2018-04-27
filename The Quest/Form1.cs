@@ -69,6 +69,13 @@ namespace The_Quest
                 }
             }
 
+            if (showBat) bat.Visible = true;
+            else bat.Visible = false;
+            if (showGhost) ghost.Visible = true;
+            else ghost.Visible = false;
+            if (showGhoul) ghoul.Visible = true;
+            else ghoul.Visible = false;
+
             sword.Visible = false;
             bow.Visible = false;
             redPotion.Visible = false;
@@ -94,6 +101,12 @@ namespace The_Quest
             //  Check the Game object’s CheckPlayerInventory() method to figure out whether or not to
             //display the various inventory icons.
 
+            invSword.Visible = false;
+            invBow.Visible = false;
+            invMace.Visible = false;
+            invBluePotion.Visible = false;
+            invRedPotion.Visible = false;
+
             weaponControl.Location = game.WeaponInRoom.Location;
             if (game.WeaponInRoom.PickedUp)
                 weaponControl.Visible = false;
@@ -118,6 +131,96 @@ namespace The_Quest
         public Form1()
         {
             InitializeComponent();
+            game = new Game(new Rectangle(99, 80, 540, 219));
+            game.NewLevel(random);
+            UpdateCharacters();
+            buttonMoveUp.KeyDown += new KeyEventHandler(Form1_KeyDown);
+            buttonMoveDown.KeyDown += new KeyEventHandler(Form1_KeyDown);
+            buttonMoveRight.KeyDown += new KeyEventHandler(Form1_KeyDown);
+            buttonMoveLeft.KeyDown += new KeyEventHandler(Form1_KeyDown);
+        }
+
+        private void buttonMoveUp_Click(object sender, EventArgs e)
+        {
+            game.Move(Direction.Up, random);
+            UpdateCharacters();
+        }
+
+        private void buttonMoveDown_Click(object sender, EventArgs e)
+        {
+            game.Move(Direction.Down, random);
+            UpdateCharacters();
+        }
+
+        private void buttonMoveRight_Click(object sender, EventArgs e)
+        {
+            game.Move(Direction.Right, random);
+            UpdateCharacters();
+        }
+
+        private void buttonMoveLeft_Click(object sender, EventArgs e)
+        {
+            game.Move(Direction.Left, random);
+            UpdateCharacters();
+        }
+
+        private void buttonAttackUp_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void buttonAttackDown_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void buttonAttackRight_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void Form1_KeyDown(object sender, KeyEventArgs e)
+        {
+            if (e.KeyCode==Keys.Up)
+            {
+               
+                    game.Move(Direction.Up, random);
+                    UpdateCharacters();
+                    System.Threading.Thread.Sleep(100);
+                
+            }
+
+            if (e.KeyCode == Keys.Down)
+            {
+                
+                    game.Move(Direction.Down, random);
+                    UpdateCharacters();
+                    System.Threading.Thread.Sleep(100);
+                
+            }
+
+            if (e.KeyCode == Keys.Right)
+            {
+                
+                    game.Move(Direction.Right, random);
+                    UpdateCharacters();
+                    System.Threading.Thread.Sleep(100);
+                
+            }
+
+            if (e.KeyCode == Keys.Left)
+            {
+                
+                    game.Move(Direction.Left, random);
+                    UpdateCharacters();
+                    System.Threading.Thread.Sleep(100);
+                
+            }
+        }
+
+        private void buttonMoveUp_PreviewKeyDown(object sender, PreviewKeyDownEventArgs e)
+        {
+            e.IsInputKey = true;
         }
     }
 }

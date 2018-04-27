@@ -18,7 +18,12 @@ namespace The_Quest
 
         public override void Attack(Direction direction, Random random)
         {
-            //TODO: override attack method.
+            
+                DamageEnemy(direction - 1, 10, 3, random);
+                DamageEnemy(direction, 10, 3, random);
+                DamageEnemy(direction + 1, 10, 3, random);
+            
+            //HACK: override attack method.
             //            The sword is the first weapon the player picks up.It’s got a wide
             //angle of attack: if he attacks up, then it first tries to attack an
             //enemy that’s in that direction. If there’s no enemy there, it looks

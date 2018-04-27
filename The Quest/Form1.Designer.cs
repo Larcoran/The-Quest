@@ -38,11 +38,11 @@
             this.bluePotion = new System.Windows.Forms.PictureBox();
             this.redPotion = new System.Windows.Forms.PictureBox();
             this.mace = new System.Windows.Forms.PictureBox();
-            this.pictureBox10 = new System.Windows.Forms.PictureBox();
-            this.pictureBox11 = new System.Windows.Forms.PictureBox();
-            this.pictureBox12 = new System.Windows.Forms.PictureBox();
-            this.pictureBox13 = new System.Windows.Forms.PictureBox();
-            this.pictureBox14 = new System.Windows.Forms.PictureBox();
+            this.invSword = new System.Windows.Forms.PictureBox();
+            this.invBow = new System.Windows.Forms.PictureBox();
+            this.invMace = new System.Windows.Forms.PictureBox();
+            this.invBluePotion = new System.Windows.Forms.PictureBox();
+            this.invRedPotion = new System.Windows.Forms.PictureBox();
             this.tableLayoutPanel1 = new System.Windows.Forms.TableLayoutPanel();
             this.label3 = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
@@ -53,15 +53,15 @@
             this.batHitPoints = new System.Windows.Forms.Label();
             this.playerHitPoints = new System.Windows.Forms.Label();
             this.groupBox1 = new System.Windows.Forms.GroupBox();
-            this.button4 = new System.Windows.Forms.Button();
-            this.button3 = new System.Windows.Forms.Button();
-            this.button2 = new System.Windows.Forms.Button();
-            this.button1 = new System.Windows.Forms.Button();
+            this.buttonMoveRight = new System.Windows.Forms.Button();
+            this.buttonMoveUp = new System.Windows.Forms.Button();
+            this.buttonMoveDown = new System.Windows.Forms.Button();
+            this.buttonMoveLeft = new System.Windows.Forms.Button();
             this.groupBox2 = new System.Windows.Forms.GroupBox();
-            this.button5 = new System.Windows.Forms.Button();
-            this.button6 = new System.Windows.Forms.Button();
-            this.button7 = new System.Windows.Forms.Button();
-            this.button8 = new System.Windows.Forms.Button();
+            this.buttonAttackRight = new System.Windows.Forms.Button();
+            this.buttonAttackUp = new System.Windows.Forms.Button();
+            this.buttonAttackDown = new System.Windows.Forms.Button();
+            this.buttonAttackLeft = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.Player)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.sword)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.ghoul)).BeginInit();
@@ -71,11 +71,11 @@
             ((System.ComponentModel.ISupportInitialize)(this.bluePotion)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.redPotion)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.mace)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox10)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox11)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox12)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox13)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox14)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.invSword)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.invBow)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.invMace)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.invBluePotion)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.invRedPotion)).BeginInit();
             this.tableLayoutPanel1.SuspendLayout();
             this.groupBox1.SuspendLayout();
             this.groupBox2.SuspendLayout();
@@ -189,50 +189,60 @@
             this.mace.TabIndex = 8;
             this.mace.TabStop = false;
             // 
-            // pictureBox10
+            // invSword
             // 
-            this.pictureBox10.BackColor = System.Drawing.Color.Transparent;
-            this.pictureBox10.Location = new System.Drawing.Point(103, 454);
-            this.pictureBox10.Name = "pictureBox10";
-            this.pictureBox10.Size = new System.Drawing.Size(60, 60);
-            this.pictureBox10.TabIndex = 9;
-            this.pictureBox10.TabStop = false;
+            this.invSword.BackColor = System.Drawing.Color.Transparent;
+            this.invSword.Image = global::The_Quest.Properties.Resources.sword;
+            this.invSword.Location = new System.Drawing.Point(103, 454);
+            this.invSword.Name = "invSword";
+            this.invSword.Size = new System.Drawing.Size(60, 61);
+            this.invSword.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.invSword.TabIndex = 9;
+            this.invSword.TabStop = false;
             // 
-            // pictureBox11
+            // invBow
             // 
-            this.pictureBox11.BackColor = System.Drawing.Color.Transparent;
-            this.pictureBox11.Location = new System.Drawing.Point(169, 454);
-            this.pictureBox11.Name = "pictureBox11";
-            this.pictureBox11.Size = new System.Drawing.Size(60, 60);
-            this.pictureBox11.TabIndex = 10;
-            this.pictureBox11.TabStop = false;
+            this.invBow.BackColor = System.Drawing.Color.Transparent;
+            this.invBow.Image = global::The_Quest.Properties.Resources.bow;
+            this.invBow.Location = new System.Drawing.Point(169, 454);
+            this.invBow.Name = "invBow";
+            this.invBow.Size = new System.Drawing.Size(60, 60);
+            this.invBow.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.invBow.TabIndex = 10;
+            this.invBow.TabStop = false;
             // 
-            // pictureBox12
+            // invMace
             // 
-            this.pictureBox12.BackColor = System.Drawing.Color.Transparent;
-            this.pictureBox12.Location = new System.Drawing.Point(234, 454);
-            this.pictureBox12.Name = "pictureBox12";
-            this.pictureBox12.Size = new System.Drawing.Size(60, 60);
-            this.pictureBox12.TabIndex = 11;
-            this.pictureBox12.TabStop = false;
+            this.invMace.BackColor = System.Drawing.Color.Transparent;
+            this.invMace.Image = global::The_Quest.Properties.Resources.mace;
+            this.invMace.Location = new System.Drawing.Point(234, 454);
+            this.invMace.Name = "invMace";
+            this.invMace.Size = new System.Drawing.Size(60, 60);
+            this.invMace.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.invMace.TabIndex = 11;
+            this.invMace.TabStop = false;
             // 
-            // pictureBox13
+            // invBluePotion
             // 
-            this.pictureBox13.BackColor = System.Drawing.Color.Transparent;
-            this.pictureBox13.Location = new System.Drawing.Point(300, 454);
-            this.pictureBox13.Name = "pictureBox13";
-            this.pictureBox13.Size = new System.Drawing.Size(60, 60);
-            this.pictureBox13.TabIndex = 12;
-            this.pictureBox13.TabStop = false;
+            this.invBluePotion.BackColor = System.Drawing.Color.Transparent;
+            this.invBluePotion.Image = global::The_Quest.Properties.Resources.potion_blue;
+            this.invBluePotion.Location = new System.Drawing.Point(300, 454);
+            this.invBluePotion.Name = "invBluePotion";
+            this.invBluePotion.Size = new System.Drawing.Size(60, 60);
+            this.invBluePotion.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.invBluePotion.TabIndex = 12;
+            this.invBluePotion.TabStop = false;
             // 
-            // pictureBox14
+            // invRedPotion
             // 
-            this.pictureBox14.BackColor = System.Drawing.Color.Transparent;
-            this.pictureBox14.Location = new System.Drawing.Point(366, 454);
-            this.pictureBox14.Name = "pictureBox14";
-            this.pictureBox14.Size = new System.Drawing.Size(60, 60);
-            this.pictureBox14.TabIndex = 13;
-            this.pictureBox14.TabStop = false;
+            this.invRedPotion.BackColor = System.Drawing.Color.Transparent;
+            this.invRedPotion.Image = global::The_Quest.Properties.Resources.potion_red;
+            this.invRedPotion.Location = new System.Drawing.Point(366, 454);
+            this.invRedPotion.Name = "invRedPotion";
+            this.invRedPotion.Size = new System.Drawing.Size(60, 60);
+            this.invRedPotion.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.invRedPotion.TabIndex = 13;
+            this.invRedPotion.TabStop = false;
             // 
             // tableLayoutPanel1
             // 
@@ -333,10 +343,10 @@
             // groupBox1
             // 
             this.groupBox1.BackColor = System.Drawing.Color.Transparent;
-            this.groupBox1.Controls.Add(this.button4);
-            this.groupBox1.Controls.Add(this.button3);
-            this.groupBox1.Controls.Add(this.button2);
-            this.groupBox1.Controls.Add(this.button1);
+            this.groupBox1.Controls.Add(this.buttonMoveRight);
+            this.groupBox1.Controls.Add(this.buttonMoveUp);
+            this.groupBox1.Controls.Add(this.buttonMoveDown);
+            this.groupBox1.Controls.Add(this.buttonMoveLeft);
             this.groupBox1.Location = new System.Drawing.Point(441, 435);
             this.groupBox1.Name = "groupBox1";
             this.groupBox1.Size = new System.Drawing.Size(120, 80);
@@ -344,61 +354,69 @@
             this.groupBox1.TabStop = false;
             this.groupBox1.Text = "Move";
             // 
-            // button4
+            // buttonMoveRight
             // 
-            this.button4.AutoSize = true;
-            this.button4.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
-            this.button4.Location = new System.Drawing.Point(79, 48);
-            this.button4.Name = "button4";
-            this.button4.RightToLeft = System.Windows.Forms.RightToLeft.No;
-            this.button4.Size = new System.Drawing.Size(28, 23);
-            this.button4.TabIndex = 3;
-            this.button4.Text = "→";
-            this.button4.UseVisualStyleBackColor = true;
+            this.buttonMoveRight.AutoSize = true;
+            this.buttonMoveRight.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
+            this.buttonMoveRight.Location = new System.Drawing.Point(79, 48);
+            this.buttonMoveRight.Name = "buttonMoveRight";
+            this.buttonMoveRight.RightToLeft = System.Windows.Forms.RightToLeft.No;
+            this.buttonMoveRight.Size = new System.Drawing.Size(28, 23);
+            this.buttonMoveRight.TabIndex = 3;
+            this.buttonMoveRight.Text = "→";
+            this.buttonMoveRight.UseVisualStyleBackColor = true;
+            this.buttonMoveRight.Click += new System.EventHandler(this.buttonMoveRight_Click);
+            this.buttonMoveRight.PreviewKeyDown += new System.Windows.Forms.PreviewKeyDownEventHandler(this.buttonMoveUp_PreviewKeyDown);
             // 
-            // button3
+            // buttonMoveUp
             // 
-            this.button3.AutoSize = true;
-            this.button3.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
-            this.button3.Location = new System.Drawing.Point(50, 19);
-            this.button3.Name = "button3";
-            this.button3.RightToLeft = System.Windows.Forms.RightToLeft.No;
-            this.button3.Size = new System.Drawing.Size(23, 23);
-            this.button3.TabIndex = 2;
-            this.button3.Text = "↑";
-            this.button3.UseVisualStyleBackColor = true;
+            this.buttonMoveUp.AutoSize = true;
+            this.buttonMoveUp.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
+            this.buttonMoveUp.Location = new System.Drawing.Point(50, 19);
+            this.buttonMoveUp.Name = "buttonMoveUp";
+            this.buttonMoveUp.RightToLeft = System.Windows.Forms.RightToLeft.No;
+            this.buttonMoveUp.Size = new System.Drawing.Size(23, 23);
+            this.buttonMoveUp.TabIndex = 2;
+            this.buttonMoveUp.Text = "↑";
+            this.buttonMoveUp.UseVisualStyleBackColor = true;
+            this.buttonMoveUp.Click += new System.EventHandler(this.buttonMoveUp_Click);
+            this.buttonMoveUp.PreviewKeyDown += new System.Windows.Forms.PreviewKeyDownEventHandler(this.buttonMoveUp_PreviewKeyDown);
             // 
-            // button2
+            // buttonMoveDown
             // 
-            this.button2.AutoSize = true;
-            this.button2.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
-            this.button2.Location = new System.Drawing.Point(50, 48);
-            this.button2.Name = "button2";
-            this.button2.RightToLeft = System.Windows.Forms.RightToLeft.No;
-            this.button2.Size = new System.Drawing.Size(23, 23);
-            this.button2.TabIndex = 1;
-            this.button2.Text = "↓";
-            this.button2.UseVisualStyleBackColor = true;
+            this.buttonMoveDown.AutoSize = true;
+            this.buttonMoveDown.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
+            this.buttonMoveDown.Location = new System.Drawing.Point(50, 48);
+            this.buttonMoveDown.Name = "buttonMoveDown";
+            this.buttonMoveDown.RightToLeft = System.Windows.Forms.RightToLeft.No;
+            this.buttonMoveDown.Size = new System.Drawing.Size(23, 23);
+            this.buttonMoveDown.TabIndex = 1;
+            this.buttonMoveDown.Text = "↓";
+            this.buttonMoveDown.UseVisualStyleBackColor = true;
+            this.buttonMoveDown.Click += new System.EventHandler(this.buttonMoveDown_Click);
+            this.buttonMoveDown.PreviewKeyDown += new System.Windows.Forms.PreviewKeyDownEventHandler(this.buttonMoveUp_PreviewKeyDown);
             // 
-            // button1
+            // buttonMoveLeft
             // 
-            this.button1.AutoSize = true;
-            this.button1.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
-            this.button1.Location = new System.Drawing.Point(16, 48);
-            this.button1.Name = "button1";
-            this.button1.RightToLeft = System.Windows.Forms.RightToLeft.No;
-            this.button1.Size = new System.Drawing.Size(28, 23);
-            this.button1.TabIndex = 0;
-            this.button1.Text = "←";
-            this.button1.UseVisualStyleBackColor = true;
+            this.buttonMoveLeft.AutoSize = true;
+            this.buttonMoveLeft.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
+            this.buttonMoveLeft.Location = new System.Drawing.Point(16, 48);
+            this.buttonMoveLeft.Name = "buttonMoveLeft";
+            this.buttonMoveLeft.RightToLeft = System.Windows.Forms.RightToLeft.No;
+            this.buttonMoveLeft.Size = new System.Drawing.Size(28, 23);
+            this.buttonMoveLeft.TabIndex = 0;
+            this.buttonMoveLeft.Text = "←";
+            this.buttonMoveLeft.UseVisualStyleBackColor = true;
+            this.buttonMoveLeft.Click += new System.EventHandler(this.buttonMoveLeft_Click);
+            this.buttonMoveLeft.PreviewKeyDown += new System.Windows.Forms.PreviewKeyDownEventHandler(this.buttonMoveUp_PreviewKeyDown);
             // 
             // groupBox2
             // 
             this.groupBox2.BackColor = System.Drawing.Color.Transparent;
-            this.groupBox2.Controls.Add(this.button5);
-            this.groupBox2.Controls.Add(this.button6);
-            this.groupBox2.Controls.Add(this.button7);
-            this.groupBox2.Controls.Add(this.button8);
+            this.groupBox2.Controls.Add(this.buttonAttackRight);
+            this.groupBox2.Controls.Add(this.buttonAttackUp);
+            this.groupBox2.Controls.Add(this.buttonAttackDown);
+            this.groupBox2.Controls.Add(this.buttonAttackLeft);
             this.groupBox2.Location = new System.Drawing.Point(577, 435);
             this.groupBox2.Name = "groupBox2";
             this.groupBox2.Size = new System.Drawing.Size(120, 80);
@@ -406,53 +424,56 @@
             this.groupBox2.TabStop = false;
             this.groupBox2.Text = "Attack";
             // 
-            // button5
+            // buttonAttackRight
             // 
-            this.button5.AutoSize = true;
-            this.button5.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
-            this.button5.Location = new System.Drawing.Point(79, 48);
-            this.button5.Name = "button5";
-            this.button5.RightToLeft = System.Windows.Forms.RightToLeft.No;
-            this.button5.Size = new System.Drawing.Size(28, 23);
-            this.button5.TabIndex = 7;
-            this.button5.Text = "→";
-            this.button5.UseVisualStyleBackColor = true;
+            this.buttonAttackRight.AutoSize = true;
+            this.buttonAttackRight.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
+            this.buttonAttackRight.Location = new System.Drawing.Point(79, 48);
+            this.buttonAttackRight.Name = "buttonAttackRight";
+            this.buttonAttackRight.RightToLeft = System.Windows.Forms.RightToLeft.No;
+            this.buttonAttackRight.Size = new System.Drawing.Size(28, 23);
+            this.buttonAttackRight.TabIndex = 7;
+            this.buttonAttackRight.Text = "→";
+            this.buttonAttackRight.UseVisualStyleBackColor = true;
+            this.buttonAttackRight.Click += new System.EventHandler(this.buttonAttackRight_Click);
             // 
-            // button6
+            // buttonAttackUp
             // 
-            this.button6.AutoSize = true;
-            this.button6.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
-            this.button6.Location = new System.Drawing.Point(50, 19);
-            this.button6.Name = "button6";
-            this.button6.RightToLeft = System.Windows.Forms.RightToLeft.No;
-            this.button6.Size = new System.Drawing.Size(23, 23);
-            this.button6.TabIndex = 6;
-            this.button6.Text = "↑";
-            this.button6.UseVisualStyleBackColor = true;
+            this.buttonAttackUp.AutoSize = true;
+            this.buttonAttackUp.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
+            this.buttonAttackUp.Location = new System.Drawing.Point(50, 19);
+            this.buttonAttackUp.Name = "buttonAttackUp";
+            this.buttonAttackUp.RightToLeft = System.Windows.Forms.RightToLeft.No;
+            this.buttonAttackUp.Size = new System.Drawing.Size(23, 23);
+            this.buttonAttackUp.TabIndex = 6;
+            this.buttonAttackUp.Text = "↑";
+            this.buttonAttackUp.UseVisualStyleBackColor = true;
+            this.buttonAttackUp.Click += new System.EventHandler(this.buttonAttackUp_Click);
             // 
-            // button7
+            // buttonAttackDown
             // 
-            this.button7.AutoSize = true;
-            this.button7.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
-            this.button7.Location = new System.Drawing.Point(50, 48);
-            this.button7.Name = "button7";
-            this.button7.RightToLeft = System.Windows.Forms.RightToLeft.No;
-            this.button7.Size = new System.Drawing.Size(23, 23);
-            this.button7.TabIndex = 5;
-            this.button7.Text = "↓";
-            this.button7.UseVisualStyleBackColor = true;
+            this.buttonAttackDown.AutoSize = true;
+            this.buttonAttackDown.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
+            this.buttonAttackDown.Location = new System.Drawing.Point(50, 48);
+            this.buttonAttackDown.Name = "buttonAttackDown";
+            this.buttonAttackDown.RightToLeft = System.Windows.Forms.RightToLeft.No;
+            this.buttonAttackDown.Size = new System.Drawing.Size(23, 23);
+            this.buttonAttackDown.TabIndex = 5;
+            this.buttonAttackDown.Text = "↓";
+            this.buttonAttackDown.UseVisualStyleBackColor = true;
+            this.buttonAttackDown.Click += new System.EventHandler(this.buttonAttackDown_Click);
             // 
-            // button8
+            // buttonAttackLeft
             // 
-            this.button8.AutoSize = true;
-            this.button8.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
-            this.button8.Location = new System.Drawing.Point(16, 48);
-            this.button8.Name = "button8";
-            this.button8.RightToLeft = System.Windows.Forms.RightToLeft.No;
-            this.button8.Size = new System.Drawing.Size(28, 23);
-            this.button8.TabIndex = 4;
-            this.button8.Text = "←";
-            this.button8.UseVisualStyleBackColor = true;
+            this.buttonAttackLeft.AutoSize = true;
+            this.buttonAttackLeft.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
+            this.buttonAttackLeft.Location = new System.Drawing.Point(16, 48);
+            this.buttonAttackLeft.Name = "buttonAttackLeft";
+            this.buttonAttackLeft.RightToLeft = System.Windows.Forms.RightToLeft.No;
+            this.buttonAttackLeft.Size = new System.Drawing.Size(28, 23);
+            this.buttonAttackLeft.TabIndex = 4;
+            this.buttonAttackLeft.Text = "←";
+            this.buttonAttackLeft.UseVisualStyleBackColor = true;
             // 
             // Form1
             // 
@@ -464,11 +485,11 @@
             this.Controls.Add(this.groupBox2);
             this.Controls.Add(this.groupBox1);
             this.Controls.Add(this.tableLayoutPanel1);
-            this.Controls.Add(this.pictureBox14);
-            this.Controls.Add(this.pictureBox13);
-            this.Controls.Add(this.pictureBox12);
-            this.Controls.Add(this.pictureBox11);
-            this.Controls.Add(this.pictureBox10);
+            this.Controls.Add(this.invRedPotion);
+            this.Controls.Add(this.invBluePotion);
+            this.Controls.Add(this.invMace);
+            this.Controls.Add(this.invBow);
+            this.Controls.Add(this.invSword);
             this.Controls.Add(this.mace);
             this.Controls.Add(this.redPotion);
             this.Controls.Add(this.bluePotion);
@@ -479,11 +500,13 @@
             this.Controls.Add(this.sword);
             this.Controls.Add(this.Player);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
+            this.KeyPreview = true;
             this.MaximizeBox = false;
             this.MinimizeBox = false;
             this.Name = "Form1";
             this.SizeGripStyle = System.Windows.Forms.SizeGripStyle.Hide;
             this.Text = "Form1";
+            this.KeyDown += new System.Windows.Forms.KeyEventHandler(this.Form1_KeyDown);
             ((System.ComponentModel.ISupportInitialize)(this.Player)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.sword)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.ghoul)).EndInit();
@@ -493,11 +516,11 @@
             ((System.ComponentModel.ISupportInitialize)(this.bluePotion)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.redPotion)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.mace)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox10)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox11)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox12)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox13)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox14)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.invSword)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.invBow)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.invMace)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.invBluePotion)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.invRedPotion)).EndInit();
             this.tableLayoutPanel1.ResumeLayout(false);
             this.tableLayoutPanel1.PerformLayout();
             this.groupBox1.ResumeLayout(false);
@@ -519,11 +542,11 @@
         private System.Windows.Forms.PictureBox bluePotion;
         private System.Windows.Forms.PictureBox redPotion;
         private System.Windows.Forms.PictureBox mace;
-        private System.Windows.Forms.PictureBox pictureBox10;
-        private System.Windows.Forms.PictureBox pictureBox11;
-        private System.Windows.Forms.PictureBox pictureBox12;
-        private System.Windows.Forms.PictureBox pictureBox13;
-        private System.Windows.Forms.PictureBox pictureBox14;
+        private System.Windows.Forms.PictureBox invSword;
+        private System.Windows.Forms.PictureBox invBow;
+        private System.Windows.Forms.PictureBox invMace;
+        private System.Windows.Forms.PictureBox invBluePotion;
+        private System.Windows.Forms.PictureBox invRedPotion;
         private System.Windows.Forms.TableLayoutPanel tableLayoutPanel1;
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.Label label1;
@@ -535,14 +558,14 @@
         private System.Windows.Forms.Label playerHitPoints;
         private System.Windows.Forms.GroupBox groupBox1;
         private System.Windows.Forms.GroupBox groupBox2;
-        private System.Windows.Forms.Button button4;
-        private System.Windows.Forms.Button button3;
-        private System.Windows.Forms.Button button2;
-        private System.Windows.Forms.Button button1;
-        private System.Windows.Forms.Button button5;
-        private System.Windows.Forms.Button button6;
-        private System.Windows.Forms.Button button7;
-        private System.Windows.Forms.Button button8;
+        private System.Windows.Forms.Button buttonMoveRight;
+        private System.Windows.Forms.Button buttonMoveUp;
+        private System.Windows.Forms.Button buttonMoveDown;
+        private System.Windows.Forms.Button buttonMoveLeft;
+        private System.Windows.Forms.Button buttonAttackRight;
+        private System.Windows.Forms.Button buttonAttackUp;
+        private System.Windows.Forms.Button buttonAttackDown;
+        private System.Windows.Forms.Button buttonAttackLeft;
     }
 }
 
