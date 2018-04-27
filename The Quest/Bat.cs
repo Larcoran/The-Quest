@@ -35,12 +35,12 @@ namespace The_Quest
                 if (random.Next(1) == 0)
                 {
                     directionToMove = (Direction)random.Next(4);
-                    base.Move(directionToMove, game.Boundaries);
+                    base.location = Move(directionToMove, game.Boundaries);
                 }
                 else
                 {
                     directionToMove = FindPlayerDirection(game.PlayerLocation);
-                    base.Move(directionToMove, game.Boundaries);
+                    base.location = Move(directionToMove, game.Boundaries);
                 }
             }
 
