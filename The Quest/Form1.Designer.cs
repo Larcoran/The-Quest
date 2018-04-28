@@ -199,6 +199,7 @@
             this.invSword.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.invSword.TabIndex = 9;
             this.invSword.TabStop = false;
+            this.invSword.DoubleClick += new System.EventHandler(this.invSword_DoubleClick);
             // 
             // invBow
             // 
@@ -210,6 +211,7 @@
             this.invBow.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.invBow.TabIndex = 10;
             this.invBow.TabStop = false;
+            this.invBow.DoubleClick += new System.EventHandler(this.invBow_DoubleClick);
             // 
             // invMace
             // 
@@ -221,6 +223,7 @@
             this.invMace.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.invMace.TabIndex = 11;
             this.invMace.TabStop = false;
+            this.invMace.DoubleClick += new System.EventHandler(this.invMace_DoubleClick);
             // 
             // invBluePotion
             // 
@@ -232,6 +235,7 @@
             this.invBluePotion.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.invBluePotion.TabIndex = 12;
             this.invBluePotion.TabStop = false;
+            this.invBluePotion.DoubleClick += new System.EventHandler(this.invBluePotion_DoubleClick);
             // 
             // invRedPotion
             // 
@@ -243,6 +247,7 @@
             this.invRedPotion.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.invRedPotion.TabIndex = 13;
             this.invRedPotion.TabStop = false;
+            this.invRedPotion.DoubleClick += new System.EventHandler(this.invRedPotion_DoubleClick);
             // 
             // tableLayoutPanel1
             // 
@@ -474,6 +479,7 @@
             this.buttonAttackLeft.TabIndex = 4;
             this.buttonAttackLeft.Text = "←";
             this.buttonAttackLeft.UseVisualStyleBackColor = true;
+            this.buttonAttackLeft.Click += new System.EventHandler(this.buttonAttackLeft_Click);
             // 
             // Form1
             // 

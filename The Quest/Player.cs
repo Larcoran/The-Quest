@@ -68,6 +68,8 @@ namespace The_Quest
         public void Attack(Direction direction,Random random)
         {
             //TODO: Add code for this method.
+            if(equippedWeapon!=null)
+            equippedWeapon.Attack(direction, random);
         }
 
     }

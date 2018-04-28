@@ -212,17 +212,26 @@ namespace The_Quest
 
         private void buttonAttackUp_Click(object sender, EventArgs e)
         {
-
+            game.Attack(Direction.Up, random);
+            UpdateCharacters();
         }
 
         private void buttonAttackDown_Click(object sender, EventArgs e)
         {
-
+            game.Attack(Direction.Down, random);
+            UpdateCharacters();
         }
 
         private void buttonAttackRight_Click(object sender, EventArgs e)
         {
+            game.Attack(Direction.Right, random);
+            UpdateCharacters();
+        }
 
+        private void buttonAttackLeft_Click(object sender, EventArgs e)
+        {
+            game.Attack(Direction.Left,random);
+            UpdateCharacters();
         }
 
         private void Form1_KeyDown(object sender, KeyEventArgs e)
@@ -267,6 +276,71 @@ namespace The_Quest
         private void buttonMoveUp_PreviewKeyDown(object sender, PreviewKeyDownEventArgs e)
         {
             e.IsInputKey = true;
+        }
+
+        private void invSword_DoubleClick(object sender, EventArgs e)
+        {
+            if(game.CheckPlayerInventory("Sword"))
+            {
+                game.Equip("Sword");
+                invSword.BorderStyle = BorderStyle.FixedSingle;
+                invBow.BorderStyle = BorderStyle.None;
+                invMace.BorderStyle = BorderStyle.None;
+                invRedPotion.BorderStyle = BorderStyle.None;
+                invBluePotion.BorderStyle = BorderStyle.None;
+            }
+        }
+
+        private void invBow_DoubleClick(object sender, EventArgs e)
+        {
+            if (game.CheckPlayerInventory("Bow"))
+            {
+                game.Equip("Bow");
+                invBow.BorderStyle = BorderStyle.FixedSingle;
+                invSword.BorderStyle = BorderStyle.None;
+                invMace.BorderStyle = BorderStyle.None;
+                invRedPotion.BorderStyle = BorderStyle.None;
+                invBluePotion.BorderStyle = BorderStyle.None;
+            }
+        }
+
+        private void invMace_DoubleClick(object sender, EventArgs e)
+        {
+            if (game.CheckPlayerInventory("Mace"))
+            {
+                game.Equip("Mace");
+                invMace.BorderStyle = BorderStyle.FixedSingle;
+                invBow.BorderStyle = BorderStyle.None;
+                invSword.BorderStyle = BorderStyle.None;
+                invRedPotion.BorderStyle = BorderStyle.None;
+                invBluePotion.BorderStyle = BorderStyle.None;
+            }
+        }
+
+        private void invBluePotion_DoubleClick(object sender, EventArgs e)
+        {
+            if (game.CheckPlayerInventory("Blue Potion"))
+            {
+                game.Equip("Blue Potion");
+                invBluePotion.BorderStyle = BorderStyle.FixedSingle;
+                invBow.BorderStyle = BorderStyle.None;
+                invSword.BorderStyle = BorderStyle.None;
+                invRedPotion.BorderStyle = BorderStyle.None;
+                invMace.BorderStyle = BorderStyle.None;
+            }
+        }
+
+        private void invRedPotion_DoubleClick(object sender, EventArgs e)
+        {
+            if (game.CheckPlayerInventory("Red Potion"))
+            {
+                game.Equip("Red Potion");
+                invRedPotion.BorderStyle = BorderStyle.FixedSingle;
+                invBow.BorderStyle = BorderStyle.None;
+                invSword.BorderStyle = BorderStyle.None;
+                invBluePotion.BorderStyle = BorderStyle.None;
+                invMace.BorderStyle = BorderStyle.None;
+            }
         }
     }
 }
